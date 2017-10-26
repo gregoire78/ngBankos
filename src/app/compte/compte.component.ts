@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Mouvement } from '../models/mouvement';
 
 @Component({
@@ -11,10 +11,18 @@ export class CompteComponent implements OnInit {
   @Input()
   compte:Array<Mouvement>;
 
+  @Output()
+  sortie: EventEmitter<String>;
+
   constructor() {
+    this.sortie = new EventEmitter<String>();
    }
 
   ngOnInit() {
+  }
+
+  oula(chaine){
+    this.sortie.emit(chaine);
   }
 
 }

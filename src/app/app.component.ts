@@ -8,6 +8,7 @@ import { Mouvement } from './models/mouvement';
 })
 export class AppComponent {
   title = 'Banquos';
+  
   compteParent:Array<Mouvement>=[
     new Mouvement('abonnement yo', -300, 'description', new Date()),
     new Mouvement('abonnement yo', -300, 'description', new Date()),
@@ -15,4 +16,8 @@ export class AppComponent {
     new Mouvement('loto', +3000000, 'description', new Date()),
     new Mouvement('abonnement yo', -300, 'description', new Date())
   ];
+
+  recuperationEvent(event){
+    alert(event)
+  }
 }
