@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 /* component */
 import { AppComponent } from './app.component';
@@ -12,16 +13,19 @@ import { NumborPipe } from './numbor.pipe';
 /* service */
 import { HelloService } from './hello.service';
 import { MovementListService } from './movement-list.service';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompteComponent,
     PictoPipe,
-    NumborPipe
+    NumborPipe,
+    FormulaireComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     HelloService,

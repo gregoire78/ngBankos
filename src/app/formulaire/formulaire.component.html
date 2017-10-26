@@ -1,0 +1,20 @@
+<p>
+  formulaire works!
+</p>
+<form (ngSubmit)="enregistrer()">
+  <div>
+    <label for="inpLastName">Nom : </label>
+    <input type="text" id="inpLastName" name="nom" [(ngModel)]="user.nom">
+  </div>
+  <div>
+    <label for="inpFirstName">Prénom : </label>
+    <input type="text" id="inpFirstName" name="prenom" [(ngModel)]="user.prenom">
+  </div>
+  <input type="submit" value="Envoyer">
+</form>
+<fieldset>
+  <legend>Greguardo</legend>
+  <div>
+    Hello, {{user.nom}} {{user.prenom}}
+  </div>
+</fieldset>
