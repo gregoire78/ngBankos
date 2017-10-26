@@ -17,7 +17,7 @@ export class CompteComponent implements OnInit {
 
   constructor(public math: HelloService) {
     this.sortie = new EventEmitter<String>();
-   }
+  }
 
   ngOnInit() {
   }

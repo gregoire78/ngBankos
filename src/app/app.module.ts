@@ -10,6 +10,7 @@ import { PictoPipe } from './picto.pipe';
 
 /* service */
 import { HelloService } from './hello.service';
+import { MovementListService } from './movement-list.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HelloService } from './hello.service';
     BrowserModule
   ],
   providers: [
-    HelloService
+    HelloService,
+    MovementListService
   ],
   bootstrap: [AppComponent]
 })
