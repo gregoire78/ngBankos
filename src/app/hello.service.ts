@@ -6,7 +6,7 @@ export class HelloService {
   constructor() { }
 
   sayHello(name: String){
-    return name;
+    return `Hello ${name}`;
   }
 
 }
