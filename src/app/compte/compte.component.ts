@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Mouvement } from '../models/mouvement';
+import { HelloService } from '../hello.service';
 
 @Component({
   selector: 'app-compte',
@@ -14,7 +15,7 @@ export class CompteComponent implements OnInit {
   @Output()
   sortie: EventEmitter<String>;
 
-  constructor() {
+  constructor(public math: HelloService) {
     this.sortie = new EventEmitter<String>();
    }
 
