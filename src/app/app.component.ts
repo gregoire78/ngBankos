@@ -12,7 +12,7 @@ export class AppComponent {
   compteParent;
 
   constructor(public mvtarr: MovementListService){
-      this.compteParent = mvtarr.compteParent;
+      this.compteParent = this.mvtarr.getMouvements();
   }
 
   recuperationEvent(event){
