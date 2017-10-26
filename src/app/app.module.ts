@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CompteComponent } from './compte/compte.component';
+import { PictoPipe } from './picto.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CompteComponent,
+    PictoPipe
   ],
   imports: [
     BrowserModule
