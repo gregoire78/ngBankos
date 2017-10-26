@@ -10,7 +10,7 @@
   </tr>
   <tr *ngFor="let item of compte; index as i">
     <td (click)="oula(composant.textContent)"><img [src]="item.somme | picto" > <span [textContent]="item.title | uppercase" #composant></span></td>
-    <td [textContent]="item.somme" [ngClass]="{'green':item.somme>=0, 'red':item.somme<0}"></td>
+    <td [textContent]="item.somme | numbor" [ngClass]="{'green':item.somme>=0, 'red':item.somme<0}"></td>
     <td [textContent]="item.desc"></td>
     <td [textContent]="item.date | date:'dd/MM/yyyy'"></td>
   </tr>
