@@ -1,7 +1,7 @@
 <p>
   formulaire works!
 </p>
-<form (ngSubmit)="enregistrer()">
+<form (ngSubmit)="enregistrer()" #form="ngForm">
   <div>
     <label for="inpLastName">Nom : </label>
     <input type="text" id="inpLastName" name="nom" [(ngModel)]="user.nom">

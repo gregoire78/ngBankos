@@ -8,7 +8,7 @@ import { HelloService } from '../hello.service';
   styleUrls: ['./compte.component.css']
 })
 export class CompteComponent implements OnInit {
-  
+
   @Input()
   compte:Array<Mouvement>;
 
@@ -24,6 +24,10 @@ export class CompteComponent implements OnInit {
 
   oula(chaine){
     this.sortie.emit(chaine);
+  }
+
+  enregistrer(mvt){
+    this.compte.push(new Mouvement(mvt.title, mvt.somme, mvt.desc, new Date()))
   }
 
 }

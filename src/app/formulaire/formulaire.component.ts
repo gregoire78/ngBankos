@@ -8,7 +8,7 @@ import { User } from '../models/user';
 })
 export class FormulaireComponent implements OnInit {
 
-  user: User;
+  public user: User;
 
   constructor() {
     this.user = new User();
@@ -17,7 +17,7 @@ export class FormulaireComponent implements OnInit {
   ngOnInit() {
   }
 
-  enregistrer(){
+  enregistrer() {
     console.log(`hello ${this.user.nom} ${this.user.prenom}`)
   }
 
